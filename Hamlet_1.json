@@ -3,43 +3,43 @@
         "sektor": "VIP",
         "rzad": 1,
         "nr": 1,
-        "dostepnosc": "zajete",
+        "dostepnosc": "wolne",
         "czySelfie": true
     },
     {
         "sektor": "VIP",
         "rzad": 1,
         "nr": 2,
-        "dostepnosc": "zajete",
+        "dostepnosc": "wolne",
         "czySelfie": true
     },
     {
         "sektor": "VIP",
         "rzad": 1,
         "nr": 3,
-        "dostepnosc": "zajete",
-        "czySelfie": false
+        "dostepnosc": "wolne",
+        "czySelfie": true
     },
     {
         "sektor": "VIP",
         "rzad": 1,
         "nr": 4,
-        "dostepnosc": "zajete",
-        "czySelfie": false
+        "dostepnosc": "wolne",
+        "czySelfie": true
     },
     {
         "sektor": "VIP",
         "rzad": 1,
         "nr": 5,
-        "dostepnosc": "zajete",
+        "dostepnosc": "wolne",
         "czySelfie": true
     },
     {
         "sektor": "VIP",
         "rzad": 1,
         "nr": 6,
-        "dostepnosc": "zajete",
-        "czySelfie": false
+        "dostepnosc": "wolne",
+        "czySelfie": true
     },
     {
         "sektor": "VIP",
@@ -52,29 +52,29 @@
         "sektor": "VIP",
         "rzad": 1,
         "nr": 8,
-        "dostepnosc": "wolne",
-        "czySelfie": true
+        "dostepnosc": "zajete",
+        "czySelfie": false
     },
     {
         "sektor": "VIP",
         "rzad": 1,
         "nr": 9,
-        "dostepnosc": "wolne",
+        "dostepnosc": "zajete",
         "czySelfie": true
     },
     {
         "sektor": "VIP",
         "rzad": 1,
         "nr": 10,
-        "dostepnosc": "wolne",
-        "czySelfie": true
+        "dostepnosc": "zajete",
+        "czySelfie": false
     },
     {
         "sektor": "VIP",
         "rzad": 1,
         "nr": 11,
-        "dostepnosc": "wolne",
-        "czySelfie": true
+        "dostepnosc": "zajete",
+        "czySelfie": false
     },
     {
         "sektor": "VIP",
@@ -143,43 +143,43 @@
         "sektor": "OZN",
         "rzad": 1,
         "nr": 21,
-        "dostepnosc": "zajete",
+        "dostepnosc": "wolne",
         "czyAsystent": true
     },
     {
         "sektor": "OZN",
         "rzad": 1,
         "nr": 22,
-        "dostepnosc": "zajete",
-        "czyAsystent": false
+        "dostepnosc": "wolne",
+        "czyAsystent": true
     },
     {
         "sektor": "OZN",
         "rzad": 1,
         "nr": 23,
-        "dostepnosc": "zajete",
-        "czyAsystent": false
+        "dostepnosc": "wolne",
+        "czyAsystent": true
     },
     {
         "sektor": "OZN",
         "rzad": 1,
         "nr": 24,
-        "dostepnosc": "zajete",
-        "czyAsystent": false
+        "dostepnosc": "wolne",
+        "czyAsystent": true
     },
     {
         "sektor": "OZN",
         "rzad": 1,
         "nr": 25,
         "dostepnosc": "zajete",
-        "czyAsystent": true
+        "czyAsystent": false
     },
     {
         "sektor": "OZN",
         "rzad": 1,
         "nr": 26,
-        "dostepnosc": "zajete",
-        "czyAsystent": false
+        "dostepnosc": "wolne",
+        "czyAsystent": true
     },
     {
         "sektor": "OZN",
@@ -543,13 +543,13 @@
         "sektor": "A",
         "rzad": 3,
         "nr": 86,
-        "dostepnosc": "zajete"
+        "dostepnosc": "wolne"
     },
     {
         "sektor": "A",
         "rzad": 3,
         "nr": 87,
-        "dostepnosc": "zajete"
+        "dostepnosc": "wolne"
     },
     {
         "sektor": "A",
@@ -885,48 +885,48 @@
         "sektor": "B",
         "rzad": 3,
         "nr": 143,
-        "dostepnosc": "zajete"
+        "dostepnosc": "wolne"
     },
     {
         "sektor": "B",
         "rzad": 3,
         "nr": 144,
-        "dostepnosc": "zajete"
+        "dostepnosc": "wolne"
     },
     {
         "sektor": "B",
         "rzad": 3,
         "nr": 145,
-        "dostepnosc": "zajete"
+        "dostepnosc": "wolne"
     },
     {
         "sektor": "B",
         "rzad": 3,
         "nr": 146,
-        "dostepnosc": "zajete"
+        "dostepnosc": "wolne"
     },
     {
         "sektor": "B",
         "rzad": 3,
         "nr": 147,
-        "dostepnosc": "zajete"
+        "dostepnosc": "wolne"
     },
     {
         "sektor": "B",
         "rzad": 3,
         "nr": 148,
-        "dostepnosc": "zajete"
+        "dostepnosc": "wolne"
     },
     {
         "sektor": "B",
         "rzad": 3,
         "nr": 149,
-        "dostepnosc": "zajete"
+        "dostepnosc": "wolne"
     },
     {
         "sektor": "B",
         "rzad": 3,
         "nr": 150,
-        "dostepnosc": "zajete"
+        "dostepnosc": "wolne"
     }
 ]

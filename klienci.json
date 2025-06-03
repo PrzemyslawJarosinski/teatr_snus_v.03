@@ -3,24 +3,63 @@
         "id": 0,
         "imie": "Admin",
         "nazwisko": "Admin",
-        "mail": "admin@snus.pl"
+        "mail": "admin@snus.pl",
+        "rezerwacje": ""
     },
     {
         "id": 1,
         "imie": "",
         "nazwisko": "",
-        "mail": ""
+        "mail": "",
+        "rezerwacje": ""
     },
     {
         "id": 2,
-        "imie": "Tomasz",
-        "nazwisko": "Grzyb",
-        "mail": "grzybek@op.pl"
+        "imie": "",
+        "nazwisko": "",
+        "mail": "",
+        "rezerwacje": ""
     },
     {
         "id": 3,
         "imie": "Mariusz",
         "nazwisko": "Grajdolski",
-        "mail": "mario@gmail.com"
+        "mail": "mario@gmail.com",
+        "rezerwacje": ""
+    },
+    {
+        "id": 4,
+        "imie": "Przemek",
+        "nazwisko": "Jarosiński",
+        "mail": "przemek@wp.pl",
+        "rezerwacje": ""
+    },
+    {
+        "id": 5,
+        "imie": "Tomasz",
+        "nazwisko": "Nowak",
+        "mail": "tomcio@paluch.pl",
+        "rezerwacje": ""
+    },
+    {
+        "id": 6,
+        "imie": "",
+        "nazwisko": "",
+        "mail": "",
+        "rezerwacje": ""
+    },
+    {
+        "id": 7,
+        "imie": "",
+        "nazwisko": "",
+        "mail": "",
+        "rezerwacje": ""
+    },
+    {
+        "id": 8,
+        "imie": "Tomasz",
+        "nazwisko": "Grzybowski",
+        "mail": "grzybek@wp.pl",
+        "rezerwacje": ""
     }
 ]
