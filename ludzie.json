@@ -1,0 +1,26 @@
+[
+    {
+        "id": 0,
+        "imie": "Jan",
+        "nazwisko": "Kowalski",
+        "mail": "kowal@wp.pl"
+    },
+    {
+        "id": 1,
+        "imie": "Marian",
+        "nazwisko": "Nowak",
+        "mail": "m.nowak@wp.pl"
+    },
+    {
+        "id": 2,
+        "imie": "Elżbieta",
+        "nazwisko": "Bączek",
+        "mail": "baczek@o2.pl"
+    },
+    {
+        "id": 4,
+        "imie": "Tomek",
+        "nazwisko": "Grzyb",
+        "mail": "grzyb@onet.pl"
+    }
+]

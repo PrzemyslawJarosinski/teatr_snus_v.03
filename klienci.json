@@ -1,0 +1,26 @@
+[
+    {
+        "id": 0,
+        "imie": "Admin",
+        "nazwisko": "Admin",
+        "mail": "admin@snus.pl"
+    },
+    {
+        "id": 1,
+        "imie": "",
+        "nazwisko": "",
+        "mail": ""
+    },
+    {
+        "id": 2,
+        "imie": "Tomasz",
+        "nazwisko": "Grzyb",
+        "mail": "grzybek@op.pl"
+    },
+    {
+        "id": 3,
+        "imie": "Mariusz",
+        "nazwisko": "Grajdolski",
+        "mail": "mario@gmail.com"
+    }
+]

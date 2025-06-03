@@ -1,0 +1,932 @@
+[
+    {
+        "sektor": "VIP",
+        "rzad": 1,
+        "nr": 1,
+        "dostepnosc": "wolne",
+        "czySelfie": true
+    },
+    {
+        "sektor": "VIP",
+        "rzad": 1,
+        "nr": 2,
+        "dostepnosc": "wolne",
+        "czySelfie": true
+    },
+    {
+        "sektor": "VIP",
+        "rzad": 1,
+        "nr": 3,
+        "dostepnosc": "wolne",
+        "czySelfie": true
+    },
+    {
+        "sektor": "VIP",
+        "rzad": 1,
+        "nr": 4,
+        "dostepnosc": "wolne",
+        "czySelfie": true
+    },
+    {
+        "sektor": "VIP",
+        "rzad": 1,
+        "nr": 5,
+        "dostepnosc": "wolne",
+        "czySelfie": true
+    },
+    {
+        "sektor": "VIP",
+        "rzad": 1,
+        "nr": 6,
+        "dostepnosc": "wolne",
+        "czySelfie": true
+    },
+    {
+        "sektor": "VIP",
+        "rzad": 1,
+        "nr": 7,
+        "dostepnosc": "wolne",
+        "czySelfie": true
+    },
+    {
+        "sektor": "VIP",
+        "rzad": 1,
+        "nr": 8,
+        "dostepnosc": "wolne",
+        "czySelfie": true
+    },
+    {
+        "sektor": "VIP",
+        "rzad": 1,
+        "nr": 9,
+        "dostepnosc": "wolne",
+        "czySelfie": true
+    },
+    {
+        "sektor": "VIP",
+        "rzad": 1,
+        "nr": 10,
+        "dostepnosc": "wolne",
+        "czySelfie": true
+    },
+    {
+        "sektor": "VIP",
+        "rzad": 1,
+        "nr": 11,
+        "dostepnosc": "wolne",
+        "czySelfie": true
+    },
+    {
+        "sektor": "VIP",
+        "rzad": 1,
+        "nr": 12,
+        "dostepnosc": "wolne",
+        "czySelfie": true
+    },
+    {
+        "sektor": "VIP",
+        "rzad": 1,
+        "nr": 13,
+        "dostepnosc": "wolne",
+        "czySelfie": true
+    },
+    {
+        "sektor": "VIP",
+        "rzad": 1,
+        "nr": 14,
+        "dostepnosc": "wolne",
+        "czySelfie": true
+    },
+    {
+        "sektor": "VIP",
+        "rzad": 1,
+        "nr": 15,
+        "dostepnosc": "wolne",
+        "czySelfie": true
+    },
+    {
+        "sektor": "VIP",
+        "rzad": 1,
+        "nr": 16,
+        "dostepnosc": "wolne",
+        "czySelfie": true
+    },
+    {
+        "sektor": "VIP",
+        "rzad": 1,
+        "nr": 17,
+        "dostepnosc": "wolne",
+        "czySelfie": true
+    },
+    {
+        "sektor": "VIP",
+        "rzad": 1,
+        "nr": 18,
+        "dostepnosc": "wolne",
+        "czySelfie": true
+    },
+    {
+        "sektor": "VIP",
+        "rzad": 1,
+        "nr": 19,
+        "dostepnosc": "wolne",
+        "czySelfie": true
+    },
+    {
+        "sektor": "VIP",
+        "rzad": 1,
+        "nr": 20,
+        "dostepnosc": "wolne",
+        "czySelfie": true
+    },
+    {
+        "sektor": "OZN",
+        "rzad": 1,
+        "nr": 21,
+        "dostepnosc": "wolne",
+        "czyAsystent": true
+    },
+    {
+        "sektor": "OZN",
+        "rzad": 1,
+        "nr": 22,
+        "dostepnosc": "wolne",
+        "czyAsystent": true
+    },
+    {
+        "sektor": "OZN",
+        "rzad": 1,
+        "nr": 23,
+        "dostepnosc": "wolne",
+        "czyAsystent": true
+    },
+    {
+        "sektor": "OZN",
+        "rzad": 1,
+        "nr": 24,
+        "dostepnosc": "wolne",
+        "czyAsystent": true
+    },
+    {
+        "sektor": "OZN",
+        "rzad": 1,
+        "nr": 25,
+        "dostepnosc": "wolne",
+        "czyAsystent": true
+    },
+    {
+        "sektor": "OZN",
+        "rzad": 1,
+        "nr": 26,
+        "dostepnosc": "wolne",
+        "czyAsystent": true
+    },
+    {
+        "sektor": "OZN",
+        "rzad": 1,
+        "nr": 27,
+        "dostepnosc": "wolne",
+        "czyAsystent": true
+    },
+    {
+        "sektor": "OZN",
+        "rzad": 1,
+        "nr": 28,
+        "dostepnosc": "wolne",
+        "czyAsystent": true
+    },
+    {
+        "sektor": "OZN",
+        "rzad": 1,
+        "nr": 29,
+        "dostepnosc": "wolne",
+        "czyAsystent": true
+    },
+    {
+        "sektor": "OZN",
+        "rzad": 1,
+        "nr": 30,
+        "dostepnosc": "wolne",
+        "czyAsystent": true
+    },
+    {
+        "sektor": "A",
+        "rzad": 1,
+        "nr": 31,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "A",
+        "rzad": 1,
+        "nr": 32,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "A",
+        "rzad": 1,
+        "nr": 33,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "A",
+        "rzad": 1,
+        "nr": 34,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "A",
+        "rzad": 1,
+        "nr": 35,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "A",
+        "rzad": 1,
+        "nr": 36,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "A",
+        "rzad": 1,
+        "nr": 37,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "A",
+        "rzad": 1,
+        "nr": 38,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "A",
+        "rzad": 1,
+        "nr": 39,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "A",
+        "rzad": 1,
+        "nr": 40,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "A",
+        "rzad": 1,
+        "nr": 41,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "A",
+        "rzad": 1,
+        "nr": 42,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "A",
+        "rzad": 1,
+        "nr": 43,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "A",
+        "rzad": 1,
+        "nr": 44,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "A",
+        "rzad": 1,
+        "nr": 45,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "A",
+        "rzad": 1,
+        "nr": 46,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "A",
+        "rzad": 1,
+        "nr": 47,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "A",
+        "rzad": 1,
+        "nr": 48,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "A",
+        "rzad": 1,
+        "nr": 49,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "A",
+        "rzad": 1,
+        "nr": 50,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "A",
+        "rzad": 2,
+        "nr": 51,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "A",
+        "rzad": 2,
+        "nr": 52,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "A",
+        "rzad": 2,
+        "nr": 53,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "A",
+        "rzad": 2,
+        "nr": 54,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "A",
+        "rzad": 2,
+        "nr": 55,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "A",
+        "rzad": 2,
+        "nr": 56,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "A",
+        "rzad": 2,
+        "nr": 57,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "A",
+        "rzad": 2,
+        "nr": 58,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "A",
+        "rzad": 2,
+        "nr": 59,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "A",
+        "rzad": 2,
+        "nr": 60,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "A",
+        "rzad": 2,
+        "nr": 61,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "A",
+        "rzad": 2,
+        "nr": 62,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "A",
+        "rzad": 2,
+        "nr": 63,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "A",
+        "rzad": 2,
+        "nr": 64,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "A",
+        "rzad": 2,
+        "nr": 65,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "A",
+        "rzad": 2,
+        "nr": 66,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "A",
+        "rzad": 2,
+        "nr": 67,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "A",
+        "rzad": 2,
+        "nr": 68,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "A",
+        "rzad": 2,
+        "nr": 69,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "A",
+        "rzad": 2,
+        "nr": 70,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "A",
+        "rzad": 3,
+        "nr": 71,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "A",
+        "rzad": 3,
+        "nr": 72,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "A",
+        "rzad": 3,
+        "nr": 73,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "A",
+        "rzad": 3,
+        "nr": 74,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "A",
+        "rzad": 3,
+        "nr": 75,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "A",
+        "rzad": 3,
+        "nr": 76,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "A",
+        "rzad": 3,
+        "nr": 77,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "A",
+        "rzad": 3,
+        "nr": 78,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "A",
+        "rzad": 3,
+        "nr": 79,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "A",
+        "rzad": 3,
+        "nr": 80,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "A",
+        "rzad": 3,
+        "nr": 81,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "A",
+        "rzad": 3,
+        "nr": 82,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "A",
+        "rzad": 3,
+        "nr": 83,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "A",
+        "rzad": 3,
+        "nr": 84,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "A",
+        "rzad": 3,
+        "nr": 85,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "A",
+        "rzad": 3,
+        "nr": 86,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "A",
+        "rzad": 3,
+        "nr": 87,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "A",
+        "rzad": 3,
+        "nr": 88,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "A",
+        "rzad": 3,
+        "nr": 89,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "A",
+        "rzad": 3,
+        "nr": 90,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "B",
+        "rzad": 1,
+        "nr": 91,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "B",
+        "rzad": 1,
+        "nr": 92,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "B",
+        "rzad": 1,
+        "nr": 93,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "B",
+        "rzad": 1,
+        "nr": 94,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "B",
+        "rzad": 1,
+        "nr": 95,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "B",
+        "rzad": 1,
+        "nr": 96,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "B",
+        "rzad": 1,
+        "nr": 97,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "B",
+        "rzad": 1,
+        "nr": 98,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "B",
+        "rzad": 1,
+        "nr": 99,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "B",
+        "rzad": 1,
+        "nr": 100,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "B",
+        "rzad": 1,
+        "nr": 101,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "B",
+        "rzad": 1,
+        "nr": 102,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "B",
+        "rzad": 1,
+        "nr": 103,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "B",
+        "rzad": 1,
+        "nr": 104,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "B",
+        "rzad": 1,
+        "nr": 105,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "B",
+        "rzad": 1,
+        "nr": 106,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "B",
+        "rzad": 1,
+        "nr": 107,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "B",
+        "rzad": 1,
+        "nr": 108,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "B",
+        "rzad": 1,
+        "nr": 109,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "B",
+        "rzad": 1,
+        "nr": 110,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "B",
+        "rzad": 2,
+        "nr": 111,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "B",
+        "rzad": 2,
+        "nr": 112,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "B",
+        "rzad": 2,
+        "nr": 113,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "B",
+        "rzad": 2,
+        "nr": 114,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "B",
+        "rzad": 2,
+        "nr": 115,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "B",
+        "rzad": 2,
+        "nr": 116,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "B",
+        "rzad": 2,
+        "nr": 117,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "B",
+        "rzad": 2,
+        "nr": 118,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "B",
+        "rzad": 2,
+        "nr": 119,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "B",
+        "rzad": 2,
+        "nr": 120,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "B",
+        "rzad": 2,
+        "nr": 121,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "B",
+        "rzad": 2,
+        "nr": 122,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "B",
+        "rzad": 2,
+        "nr": 123,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "B",
+        "rzad": 2,
+        "nr": 124,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "B",
+        "rzad": 2,
+        "nr": 125,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "B",
+        "rzad": 2,
+        "nr": 126,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "B",
+        "rzad": 2,
+        "nr": 127,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "B",
+        "rzad": 2,
+        "nr": 128,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "B",
+        "rzad": 2,
+        "nr": 129,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "B",
+        "rzad": 2,
+        "nr": 130,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "B",
+        "rzad": 3,
+        "nr": 131,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "B",
+        "rzad": 3,
+        "nr": 132,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "B",
+        "rzad": 3,
+        "nr": 133,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "B",
+        "rzad": 3,
+        "nr": 134,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "B",
+        "rzad": 3,
+        "nr": 135,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "B",
+        "rzad": 3,
+        "nr": 136,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "B",
+        "rzad": 3,
+        "nr": 137,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "B",
+        "rzad": 3,
+        "nr": 138,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "B",
+        "rzad": 3,
+        "nr": 139,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "B",
+        "rzad": 3,
+        "nr": 140,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "B",
+        "rzad": 3,
+        "nr": 141,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "B",
+        "rzad": 3,
+        "nr": 142,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "B",
+        "rzad": 3,
+        "nr": 143,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "B",
+        "rzad": 3,
+        "nr": 144,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "B",
+        "rzad": 3,
+        "nr": 145,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "B",
+        "rzad": 3,
+        "nr": 146,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "B",
+        "rzad": 3,
+        "nr": 147,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "B",
+        "rzad": 3,
+        "nr": 148,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "B",
+        "rzad": 3,
+        "nr": 149,
+        "dostepnosc": "wolne"
+    },
+    {
+        "sektor": "B",
+        "rzad": 3,
+        "nr": 150,
+        "dostepnosc": "wolne"
+    }
+]
