@@ -277,7 +277,7 @@ while decyzja == "R" or decyzja == "r":
 
         decyzja2=input(f"\nCzy chcesz rezerwować ponownie dla konta {k.imie} {k.nazwisko}? Jeśli tak, wpisz literę T. Jeśli nie, dowolny inny znak. Zatwierdź enterem: ")
 
-    decyzja=input("\nCzy chcesz rezerwować ponownie na innym koncie? \nJeśli tak, wpisz literę R. Jeśli nie, dowolny znak. Zatwierdź enterem: ")
+    decyzja=input("\nCzy chcesz rezerwować ponownie na innym koncie? \nJeśli tak, wpisz literę R. Jeśli nie, dowolny inny znak. Zatwierdź enterem: ")
 
 
 print("Dziękujemy za skorzystanie z systemu. Do zobaczenia ponownie!")
