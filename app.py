@@ -15,10 +15,10 @@ ________________________________________________________________________________
 Aby się Zarejestrować, wpisz Z.
 Jeśli masz już konto i chcesz:
     - Rezerwować, wpisz R.
-    - Wyświetlić swoje rezerwacje, wpisz W.
+    - Wyświetlić swoje rezerwacje i nimi zarządzać, wpisz W.
 Aby Usunąć swoje konto, wpisz U.
 ____________________________________________________________________________________________________________""")
-#kasowanie rezerwacji umożliwimy wewnątrz wyświetlania :)
+
 def sztuki_terminy():
     print("""
 ____________________________________________________________________________________________________________
@@ -121,9 +121,6 @@ class Klient:
                 if klient["mail"]==self.mail:
                     print(klient)
 
-    def pokazRezerwacjeKlienta(self):
-        pass
-        # tu skorzystamy z pliku klienci.json gdzie będą klienci i ich wszystkie rezerwacje (pamiętaj żeby uwzględniać rezerwacje z różnych sztuk i terminów!)
 
 class Teatr:
     def __init__(self, sztuka, termin, id_klienta):
@@ -145,8 +142,8 @@ class Teatr:
 
 
     def rezerwuj(self):
-        #powinno odhaczać (wolne/zajęte) miejsce w pliku (np. Hamlet_1.json) zawierającym stan sali na Hamleta (np. 13 czerwca)
-        print(f"Rezerwujemy dla klienta o numerze: {self.id_klienta}.") #alleluja xD może coś z tego będzie
+
+        # print(f"Rezerwujemy dla klienta o numerze: {self.id_klienta}.")
         sektor=input("Podaj, w którym sektorze chcesz rezerwować (wpisz dużą literę A lub B, albo skrót OZN lub VIP): ")
         ile = int(input("Podaj, ile miejsc chcesz zarezerwować: "))
 
@@ -164,6 +161,25 @@ class Teatr:
                             slot["dostepnosc"]=m.dostepnosc
                 with open(f"{self.sztuka}_{self.termin}.json","w",encoding="UTF8") as file:
                     json.dump(sloty, file, ensure_ascii=False, indent=4)
+
+
+                with open(f"rezerwacje_{self.sztuka}_{self.termin}.json", encoding="UTF8") as file:
+                    rezerwacje = json.load(file)
+                    id_klienta_str = str(self.id_klienta)
+                    if id_klienta_str not in rezerwacje:
+                        rezerwacje[id_klienta_str] = []
+                    rezerwacje_klienta = rezerwacje[id_klienta_str]
+
+                rezerwacja = {
+                    "sektor": sektor,
+                    "nr": m.nr,
+                    "dostepnosc": "zajete"
+                }
+
+                rezerwacje[id_klienta_str].append(rezerwacja)
+
+                with open(f"rezerwacje_{self.sztuka}_{self.termin}.json", "w", encoding="UTF8") as file:
+                    json.dump(rezerwacje, file, ensure_ascii=False, indent=4)
 
                 koszt.append(m.cena)
             suma = 0
@@ -192,6 +208,8 @@ class Teatr:
                             slot["czyAsystent"] = m.czyAsystent
                 with open(f"{self.sztuka}_{self.termin}.json", "w", encoding="UTF8") as file:
                     json.dump(sloty, file, ensure_ascii=False, indent=4)
+
+
 
                 koszt.append(m.cena)
             suma = 0
@@ -225,14 +243,29 @@ class Teatr:
                 suma += pozycja
             print(f"Zarezerwowano biletów: {ile} za {suma} zł łącznie.")
 
-        """teraz musimy 
-        
-        dołożyć anulowanie czyli chyba po prostu odwrócenie powyższego
-        no i na końcu to połączenie klientów z rezerwacjami :v"""
 
+        # kasowanie rezerwacji umożliwimy wewnątrz wyświetlania :)
 
-    def anuluj(self):
-        pass
+    def zarzadzaj_rezerwacjami(self):
+
+        with open(f"rezerwacje_{self.sztuka}_{self.termin}.json", encoding="UTF8") as file:
+            rezerwacje = json.load(file)
+            rezerwacje_klienta = rezerwacje.get(f"{self.id_klienta}",[])
+            for r in rezerwacje_klienta:
+                if r["sektor"] == "VIP":
+                    cena = 60
+                    if r["czySelfie"]:
+                        cena = 120
+                if r["sektor"] == "OZN":
+                    cena = 50
+                    if r["czyAsystent"]:
+                        cena = 70
+                if r["sektor"] == "A" or r["sektor"] == "B":
+                    cena = 40
+
+                print(f"Sektor: {r["sektor"]}, nr {r["nr"]}, koszt: {cena} zł")
+
+        #jeszcze trzeba zrobić usuwanie ale najpierw ogarnijmy prawidłowe dopisywanie do rezerwacje_sztuka_termin
 
 powitanie()
 decyzja = input("Co robimy? Wpisz jedną literę z powyższych i wciśnij enter: ")
@@ -249,8 +282,31 @@ if decyzja == "Z" or decyzja == "z":
     k.dodaj()
     decyzja="R"
 
-if decyzja == "W" or decyzja == "w":
-    print("\nPracujemy nad tym. Uruchom program ponownie")
+while decyzja == "W" or decyzja == "w":
+    mail=input("Podaj adres e-mail przypisany do konta, dla którego rezerwacje chcesz wyświetlić: ")
+    with open("klienci.json", encoding="UTF8") as file:
+        klienci = json.load(file)
+        for klient in klienci:
+            if klient["mail"] == mail:
+                imie = klient["imie"]
+                nazwisko = klient["nazwisko"]
+                id_klienta = klient["id"]
+
+    k = Klient(imie, nazwisko, mail)
+    print(f"Sprawdźmy Twoje zamówienia, {k.imie} {k.nazwisko}!")
+    # print(f"Twój nr w systemie to: {id_klienta}") #tak dla sprawdzenia czy wziął id jak należy
+    decyzja2 = "T"
+    while decyzja2 == "T" or decyzja2 == "t":
+        sztuki_terminy()
+        widok_sali()
+        print("Aby wyświetlić swoje rezerwacje: ")
+        t = Teatr(input("Podaj nazwę sztuki (dużą literą): "),int(input("Wybierz termin, podając cyfrę (nie dzień): ")), id_klienta)
+
+        t.zarzadzaj_rezerwacjami()
+
+        decyzja2 = input(f"\nCzy chcesz zarządzać rezerwacjami na inny termin/sztukę z konta {k.imie} {k.nazwisko}? Jeśli tak, wpisz literę T. Jeśli nie, dowolny inny znak. Zatwierdź enterem: ")
+
+    decyzja=input("\nCzy chcesz zarządzać rezerwacjami dla innego konta? \nJeśli tak, wpisz literę W. Jeśli nie, dowolny inny znak. Zatwierdź enterem: ")
 
 while decyzja == "R" or decyzja == "r":
 
@@ -283,36 +339,5 @@ while decyzja == "R" or decyzja == "r":
 print("Dziękujemy za skorzystanie z systemu. Do zobaczenia ponownie!")
 
 
-#
-
-#   k2.pokazPoMailu()
-#   k2.usun()
 
 
-# k=Klient("Przemek","Jarosiński","przemek@wp.pl")
-# k.dodaj()
-# Klient.pokazPoMailu()
-
-# Klient.pokazWszystkich(())
-
-
-
-
-# m1=MiejsceOZN("OZN", 1, "wolne", True)
-
-# m2=MiejsceVIP("VIP", 2, "zajęte", False)
-
-# m3=MiejsceZwykle("A", 3, "wolne")
-
-# [
-#     {
-#         "id": 0,
-#         "imie": "Jan",
-#         "nazwisko": "Kowalski",
-#         "mail": "kowal@wp.pl"
-#     }
-#
-# ]
-#
-
- #podnieś potem gdzieś wyżej

@@ -61,5 +61,12 @@
         "nazwisko": "Grzybowski",
         "mail": "grzybek@wp.pl",
         "rezerwacje": ""
+    },
+    {
+        "id": 9,
+        "imie": "Klaudia",
+        "nazwisko": "Łyzińska",
+        "mail": "klaudia@onet.pl",
+        "rezerwacje": ""
     }
 ]

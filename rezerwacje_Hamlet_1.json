@@ -1,0 +1,34 @@
+{
+"4":[{
+      "sektor": "VIP",
+      "nr": 8,
+      "dostepnosc": "zajete",
+      "czySelfie": true
+    },
+  {
+      "sektor": "VIP",
+      "nr": 9,
+      "dostepnosc": "zajete",
+      "czySelfie": true
+    }
+],
+  "3":[{
+        "sektor": "OZN",
+        "nr": 21,
+        "dostepnosc": "zajete",
+        "czyAsystent": true
+    },
+    {
+        "sektor": "OZN",
+        "nr": 22,
+        "dostepnosc": "zajete",
+        "czyAsystent": false
+    }
+],
+  "0": [{
+        "sektor": "A",
+        "nr": 31,
+        "dostepnosc": "zajete"
+    }
+  ]
+}
