@@ -68,5 +68,12 @@
         "nazwisko": "Łyzińska",
         "mail": "klaudia@onet.pl",
         "rezerwacje": ""
+    },
+    {
+        "id": 10,
+        "imie": "Zenek",
+        "nazwisko": "Martyniuk",
+        "mail": "zenek@akcent.pl",
+        "rezerwacje": ""
     }
 ]

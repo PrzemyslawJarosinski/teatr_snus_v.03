@@ -168,12 +168,11 @@ class Teatr:
                     id_klienta_str = str(self.id_klienta)
                     if id_klienta_str not in rezerwacje:
                         rezerwacje[id_klienta_str] = []
-                    rezerwacje_klienta = rezerwacje[id_klienta_str]
 
                 rezerwacja = {
                     "sektor": sektor,
                     "nr": m.nr,
-                    "dostepnosc": "zajete"
+                    "dostepnosc": m.dostepnosc
                 }
 
                 rezerwacje[id_klienta_str].append(rezerwacja)
@@ -187,7 +186,7 @@ class Teatr:
                 suma+=pozycja
             print(f"Zarezerwowano biletów: {ile} za {suma} zł łącznie.")
 
-
+        #JESZCZE DODAWANIE REZERWACJI DO KLIENTA W SEKTORACH OZN I VIP - PAMIĘTAJ O DODATKOWYCH ATRYBUTACH
         if sektor == "OZN":
 
             koszt = []

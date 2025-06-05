@@ -1,0 +1,22 @@
+{
+    "0": [],
+    "10": [
+        {
+            "sektor": "B",
+            "nr": 150,
+            "dostepnosc": "zajete"
+        }
+    ],
+    "4": [
+        {
+            "sektor": "A",
+            "nr": 89,
+            "dostepnosc": "zajete"
+        },
+        {
+            "sektor": "A",
+            "nr": 90,
+            "dostepnosc": "zajete"
+        }
+    ]
+}

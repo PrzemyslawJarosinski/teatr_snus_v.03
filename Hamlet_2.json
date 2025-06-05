@@ -561,13 +561,13 @@
         "sektor": "A",
         "rzad": 3,
         "nr": 89,
-        "dostepnosc": "wolne"
+        "dostepnosc": "zajete"
     },
     {
         "sektor": "A",
         "rzad": 3,
         "nr": 90,
-        "dostepnosc": "wolne"
+        "dostepnosc": "zajete"
     },
     {
         "sektor": "B",
@@ -927,6 +927,6 @@
         "sektor": "B",
         "rzad": 3,
         "nr": 150,
-        "dostepnosc": "wolne"
+        "dostepnosc": "zajete"
     }
 ]
