@@ -1,5 +1,6 @@
 import json
 
+
 def powitanie():
     print("""
 ____________________________________________________________________________________________________________
@@ -104,7 +105,7 @@ class Klient:
                     klient["rezerwacje"] = ""
         with open("klienci.json", "w", encoding="UTF8") as file:
             json.dump(klienci, file, ensure_ascii=False, indent=4)
-        print(f"Żegnaj, {self.imie} {self.nazwisko}. Mamy nadzieję, że jednak wrócisz!")
+        print(f"Żegnaj, {self.imie} {self.nazwisko}. Mamy nadzieję, że jeszcze wrócisz!")
 
     def pokazWszystkich(self):
         with open("klienci.json",encoding="UTF8") as file:
@@ -121,6 +122,7 @@ class Klient:
                 if klient["mail"]==self.mail:
                     print(klient)
 
+    #dwie ostatnie metody są zasadniczo zbędne, ale żal je usuwać 8)
 
 class Teatr:
     def __init__(self, sztuka, termin, id_klienta):
@@ -139,7 +141,6 @@ class Teatr:
                     if miejsce["sektor"] == sektor and miejsce["dostepnosc"] == "wolne":
                         print(f"{miejsce["sektor"]}, rząd: {miejsce["rzad"]}, numer: {miejsce["nr"]}")
             powtorz_sektor=input("Jeśli chcesz obejrzeć inny sektor, wpisz literę T. Jeśli przejść do rezerwacji, dowolny znak. Zatwierdź enterem: ")
-
 
     def rezerwuj(self):
 
@@ -186,7 +187,6 @@ class Teatr:
                 suma+=pozycja
             print(f"Zarezerwowano biletów: {ile} za {suma} zł łącznie.")
 
-        #JESZCZE DODAWANIE REZERWACJI DO KLIENTA W SEKTORACH OZN I VIP - PAMIĘTAJ O DODATKOWYCH ATRYBUTACH
         if sektor == "OZN":
 
             koszt = []
@@ -208,7 +208,23 @@ class Teatr:
                 with open(f"{self.sztuka}_{self.termin}.json", "w", encoding="UTF8") as file:
                     json.dump(sloty, file, ensure_ascii=False, indent=4)
 
+                with open(f"rezerwacje_{self.sztuka}_{self.termin}.json", encoding="UTF8") as file:
+                    rezerwacje = json.load(file)
+                    id_klienta_str = str(self.id_klienta)
+                    if id_klienta_str not in rezerwacje:
+                        rezerwacje[id_klienta_str] = []
 
+                rezerwacja = {
+                    "sektor": sektor,
+                    "nr": m.nr,
+                    "dostepnosc": m.dostepnosc,
+                    "czyAsystent": m.czyAsystent
+                }
+
+                rezerwacje[id_klienta_str].append(rezerwacja)
+
+                with open(f"rezerwacje_{self.sztuka}_{self.termin}.json", "w", encoding="UTF8") as file:
+                    json.dump(rezerwacje, file, ensure_ascii=False, indent=4)
 
                 koszt.append(m.cena)
             suma = 0
@@ -236,16 +252,32 @@ class Teatr:
                             slot["czySelfie"] = m.czySelfie
                 with open(f"{self.sztuka}_{self.termin}.json", "w", encoding="UTF8") as file:
                     json.dump(sloty, file, ensure_ascii=False, indent=4)
+
+                with open(f"rezerwacje_{self.sztuka}_{self.termin}.json", encoding="UTF8") as file:
+                    rezerwacje = json.load(file)
+                    id_klienta_str = str(self.id_klienta)
+                    if id_klienta_str not in rezerwacje:
+                        rezerwacje[id_klienta_str] = []
+
+                rezerwacja = {
+                    "sektor": sektor,
+                    "nr": m.nr,
+                    "dostepnosc": m.dostepnosc,
+                    "czySelfie": m.czySelfie
+                }
+
+                rezerwacje[id_klienta_str].append(rezerwacja)
+
+                with open(f"rezerwacje_{self.sztuka}_{self.termin}.json", "w", encoding="UTF8") as file:
+                    json.dump(rezerwacje, file, ensure_ascii=False, indent=4)
+
                 koszt.append(m.cena)
             suma = 0
             for pozycja in koszt:
                 suma += pozycja
             print(f"Zarezerwowano biletów: {ile} za {suma} zł łącznie.")
 
-
-        # kasowanie rezerwacji umożliwimy wewnątrz wyświetlania :)
-
-    def zarzadzaj_rezerwacjami(self):
+    def wyswietl(self):
 
         with open(f"rezerwacje_{self.sztuka}_{self.termin}.json", encoding="UTF8") as file:
             rezerwacje = json.load(file)
@@ -264,7 +296,34 @@ class Teatr:
 
                 print(f"Sektor: {r["sektor"]}, nr {r["nr"]}, koszt: {cena} zł")
 
-        #jeszcze trzeba zrobić usuwanie ale najpierw ogarnijmy prawidłowe dopisywanie do rezerwacje_sztuka_termin
+    def anuluj(self):
+        ile = int(input("Podaj, ile miejsc chcesz anulować: "))
+
+        kasacja = []
+        for i in range(ile):
+            nr = int(input(f"Podaj nr miejsca {i + 1}. przeznaczonego do anulowania: "))
+            m = MiejsceTeatralne(nr, "wolne")
+
+            with open(f"{self.sztuka}_{self.termin}.json", encoding="UTF8") as file:
+                sloty = json.load(file)
+                for slot in sloty:
+                    if slot["nr"] == m.nr:
+                        slot["dostepnosc"] = m.dostepnosc
+            with open(f"{self.sztuka}_{self.termin}.json", "w", encoding="UTF8") as file:
+                json.dump(sloty, file, ensure_ascii=False, indent=4)
+
+            with open(f"rezerwacje_{self.sztuka}_{self.termin}.json", encoding="UTF8") as file:
+                rezerwacje = json.load(file)
+                id_klienta_str = str(self.id_klienta)
+
+            rezerwacje[id_klienta_str] = [r for r in rezerwacje[id_klienta_str] if not (r["nr"] == m.nr)]
+
+            with open(f"rezerwacje_{self.sztuka}_{self.termin}.json", "w", encoding="UTF8") as file:
+                json.dump(rezerwacje, file, ensure_ascii=False, indent=4)
+
+            kasacja.append(m.nr)
+
+        print(f"Anulowano rezerwację miejsc o numerach: {kasacja}")
 
 powitanie()
 decyzja = input("Co robimy? Wpisz jedną literę z powyższych i wciśnij enter: ")
@@ -282,7 +341,9 @@ if decyzja == "Z" or decyzja == "z":
     decyzja="R"
 
 while decyzja == "W" or decyzja == "w":
+
     mail=input("Podaj adres e-mail przypisany do konta, dla którego rezerwacje chcesz wyświetlić: ")
+
     with open("klienci.json", encoding="UTF8") as file:
         klienci = json.load(file)
         for klient in klienci:
@@ -293,7 +354,7 @@ while decyzja == "W" or decyzja == "w":
 
     k = Klient(imie, nazwisko, mail)
     print(f"Sprawdźmy Twoje zamówienia, {k.imie} {k.nazwisko}!")
-    # print(f"Twój nr w systemie to: {id_klienta}") #tak dla sprawdzenia czy wziął id jak należy
+    # print(f"Twój nr w systemie to: {id_klienta}") #tak dla sprawdzenia, czy wziął id jak należy
     decyzja2 = "T"
     while decyzja2 == "T" or decyzja2 == "t":
         sztuki_terminy()
@@ -301,7 +362,10 @@ while decyzja == "W" or decyzja == "w":
         print("Aby wyświetlić swoje rezerwacje: ")
         t = Teatr(input("Podaj nazwę sztuki (dużą literą): "),int(input("Wybierz termin, podając cyfrę (nie dzień): ")), id_klienta)
 
-        t.zarzadzaj_rezerwacjami()
+        t.wyswietl()
+        decyzja3=input("Czy chcesz anulować jedną lub więcej z powyższych rezerwacji? Jeśli tak, wpisz literę T. Jeśli nie, dowolny inny znak. Zatwierdź enterem: ")
+        if decyzja3 == "T" or decyzja3 == "t":
+            t.anuluj()
 
         decyzja2 = input(f"\nCzy chcesz zarządzać rezerwacjami na inny termin/sztukę z konta {k.imie} {k.nazwisko}? Jeśli tak, wpisz literę T. Jeśli nie, dowolny inny znak. Zatwierdź enterem: ")
 
@@ -321,7 +385,7 @@ while decyzja == "R" or decyzja == "r":
 
     k=Klient(imie,nazwisko,mail)
     print(f"Zapraszamy do rezerwowania, {k.imie} {k.nazwisko}!")
-    # print(f"Twój nr w systemie to: {id_klienta}") #tak dla sprawdzenia czy wziął id jak należy
+    # print(f"Twój nr w systemie to: {id_klienta}") #tak dla sprawdzenia, czy wziął id jak należy
     decyzja2="T"
     while decyzja2 == "T" or decyzja2 == "t":
         sztuki_terminy()

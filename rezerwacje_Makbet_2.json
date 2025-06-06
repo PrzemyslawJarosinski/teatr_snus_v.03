@@ -1,3 +1,50 @@
 {
-  "0": []
+    "0": [],
+    "10": [
+        {
+            "sektor": "VIP",
+            "nr": 10,
+            "dostepnosc": "zajete",
+            "czySelfie": true
+        },
+        {
+            "sektor": "VIP",
+            "nr": 11,
+            "dostepnosc": "zajete",
+            "czySelfie": false
+        },
+        {
+            "sektor": "OZN",
+            "nr": 21,
+            "dostepnosc": "zajete",
+            "czyAsystent": true
+        },
+        {
+            "sektor": "OZN",
+            "nr": 22,
+            "dostepnosc": "zajete",
+            "czyAsystent": false
+        },
+        {
+            "sektor": "A",
+            "nr": 89,
+            "dostepnosc": "zajete"
+        },
+        {
+            "sektor": "A",
+            "nr": 90,
+            "dostepnosc": "zajete"
+        },
+        {
+            "sektor": "B",
+            "nr": 123,
+            "dostepnosc": "zajete"
+        },
+        {
+            "sektor": "B",
+            "nr": 124,
+            "dostepnosc": "zajete"
+        }
+    ],
+    "11": []
 }

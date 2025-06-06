@@ -52,14 +52,14 @@
         "sektor": "VIP",
         "rzad": 1,
         "nr": 8,
-        "dostepnosc": "zajete",
+        "dostepnosc": "wolne",
         "czySelfie": false
     },
     {
         "sektor": "VIP",
         "rzad": 1,
         "nr": 9,
-        "dostepnosc": "zajete",
+        "dostepnosc": "wolne",
         "czySelfie": false
     },
     {
@@ -87,8 +87,8 @@
         "sektor": "VIP",
         "rzad": 1,
         "nr": 13,
-        "dostepnosc": "wolne",
-        "czySelfie": true
+        "dostepnosc": "zajete",
+        "czySelfie": false
     },
     {
         "sektor": "VIP",
@@ -199,7 +199,7 @@
         "sektor": "OZN",
         "rzad": 1,
         "nr": 29,
-        "dostepnosc": "wolne",
+        "dostepnosc": "zajete",
         "czyAsystent": true
     },
     {
@@ -207,7 +207,7 @@
         "rzad": 1,
         "nr": 30,
         "dostepnosc": "wolne",
-        "czyAsystent": true
+        "czyAsystent": false
     },
     {
         "sektor": "A",

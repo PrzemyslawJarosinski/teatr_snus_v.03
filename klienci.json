@@ -75,5 +75,12 @@
         "nazwisko": "Martyniuk",
         "mail": "zenek@akcent.pl",
         "rezerwacje": ""
+    },
+    {
+        "id": 11,
+        "imie": "",
+        "nazwisko": "",
+        "mail": "",
+        "rezerwacje": ""
     }
 ]
